@@ -33,3 +33,4 @@ const add = (x,y) => console.log(x + y);
 let obj1 = {a:1, b:2, c:4};
 let obj2 = Object.assign({c:5, d:6}, obj1);
 console.log(obj1.c, obj2.d);
+
