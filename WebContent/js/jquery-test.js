@@ -23,3 +23,10 @@ function ammend() {
 	$('#myDiv2').before('<hr style="border-top: 2px solid orange;"/>');
 	$('#myDiv2').after('<hr style="border-top: 2px solid green;"/>');
 }
+
+function change_class() {
+	$('#myDiv1').addClass('custom');
+	$('#myDiv3').toggleClass('custom');
+	$('#myDiv4').css('background-color','blue');
+	$('#myDiv4').css('color','white');
+}
