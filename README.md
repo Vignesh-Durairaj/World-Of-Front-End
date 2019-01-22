@@ -1,4 +1,7 @@
 # World Of Front End
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/9053f084956d4d97a180bee975a1dc98)](https://app.codacy.com/app/Vignesh-Durairaj/World-Of-Front-End?utm_source=github.com&utm_medium=referral&utm_content=Vignesh-Durairaj/World-Of-Front-End&utm_campaign=Badge_Grade_Dashboard)
+
 Let this space acts as a placeholder for my hands-on practices with the polished front end technologies of the latest generation
 
 * Started out with some practices in `HTML5`
