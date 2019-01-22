@@ -30,3 +30,11 @@ function change_class() {
 	$('#myDiv4').css('background-color','blue');
 	$('#myDiv4').css('color','white');
 }
+
+function dom_test() {
+	var par_ele = $('#myDiv1').parent();
+	par_ele.toggleClass('dark');
+
+	$('div').eq(0).remove();
+	// par_ele.empty();
+}
