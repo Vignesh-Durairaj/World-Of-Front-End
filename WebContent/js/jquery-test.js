@@ -1,3 +1,29 @@
+
+// To handle some JQuery based event handling
+
+$(function(){
+	$('#eventButton').click(function() {
+		var e = $('<p></p>').text("some value here");
+		$('#eventButton').after(e);
+	});
+
+	$('#myDiv4').on('mouseenter', function(){
+		$('body').attr('class', 'dark');
+		$('#eventButton').trigger('click');
+	});
+
+	$('#myDiv4').on('mouseleave', function(){
+		$('body').removeAttr('class');
+		$('#myDiv4').off('mouseenter');
+		$('#myDiv4').off('mouseleave');
+	});
+
+	$('body').on('mouseover', function(event){
+		$('#xPos').text(event.pageX);
+		$('#yPos').text(event.pageY);
+	});
+}); 
+
 function say_hello() {
 	textVal = $('#myText').val()
 	if (textVal) {
@@ -37,4 +63,12 @@ function dom_test() {
 
 	$('div').eq(0).remove();
 	// par_ele.empty();
+}
+
+function animate() {
+	$('span').toggle(1000);
+	$('div').fadeToggle(1000);
+	$('a').slideToggle(1000);
+	$('input[type=text]').animate({width:'+=50px'}, 1000);
+	$('input[type=text]').animate({width:'-=50px'}, 1000);
 }
