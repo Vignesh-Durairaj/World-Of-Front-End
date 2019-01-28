@@ -65,7 +65,7 @@ function dom_test() {
 	// par_ele.empty();
 }
 
-function animate() {
+function animate_page() {
 	$('span').toggle(1000);
 	$('div').fadeToggle(1000);
 	$('a').slideToggle(1000);
