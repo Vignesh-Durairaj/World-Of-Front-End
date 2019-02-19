@@ -9,5 +9,5 @@ Let this space acts as a placeholder for my hands-on practices with the polished
   * testing out new elements in `HTML5` that are used in documents/forms like *Articles* and *Apart*.
 
 * Then started practicising `JavaScript`
-  * Started with basic scripting and with introduction to `ECMA6Script`
-  * Started practising a little bit with `JQuery` API for javascripting
+  * Started with basic scripting and with introduction to `ECMA6Script`.
+  * Started practising a little bit with `JQuery` API for javascripting.
