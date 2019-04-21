@@ -11,6 +11,11 @@ window.onload = function() {
 		console.log("Inside the myFunction : " + myValue);
 	}
 
+	if (myValue > 5) {
+		const myValue = 20;
+		console.log("Inside the IF loop : " + myValue);
+	}
+
 	myFunction();
 	console.log("Inside the main block : " + myValue);
 }
