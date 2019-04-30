@@ -31,4 +31,24 @@ window.onload = function() {
 	}
 
 	printPerson('Vignesh', 32);
+
+	// Tagged template litterals
+	function customTag(string, name_exp, age_exp) {
+		let age_status;
+		if (age > 18){
+			age_status = 'Major';
+		} else {
+			age_status = 'Minor';
+		}
+
+		return `${name_exp} is ${age_status}, since the age is ${age_exp}`;
+	}
+
+	let name = 'Vignesh';
+	let age = 32;
+	console.log(customTag`The input detail has ${name} and ${age}`);
+
+	name = 'Pranov';
+	age = 8;
+	console.log(customTag`The input detail has ${name} and ${age}`);
 }
