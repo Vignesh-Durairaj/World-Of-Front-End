@@ -1,6 +1,7 @@
 window.onload = function() {
 	console.log('Welcome to some Object enhancement in ES6 !');
 
+	// The usual way
 	class Employee {
 		name = ''; id = 0; age = 0; salary = 0;
 
