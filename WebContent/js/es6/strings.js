@@ -1,9 +1,26 @@
 window.onload = function() {
 	console.log("Let's see some new elements in ECMA6 Scripts for Strings !");
 
+	/*
+		The new methods included in ECMA6 standard of JS are
+
+		1. startsWith
+		2. endsWith
+		3. includes
+		4. repeat
+	*/
+
 	for (const ch of 'x\uD83D\uDE80y') {
     	console.log(ch);
 	}
+
+	let stringVal = 'Hello World !';
+	console.log(stringVal.startsWith(' World')); // false
+	console.log(stringVal.startsWith(' World', 5)); // true
+
+	console.log(stringVal.endsWith('Hello')); // false
+	console.log(stringVal.endsWith('Hello', stringVal.length - 8)); // true
+
 
 	document.getElementById('process').onclick = function() {
 		let textStr = document.getElementById('sampleText').value;
