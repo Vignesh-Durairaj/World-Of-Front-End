@@ -17,4 +17,25 @@ window.onload = function() {
 	anotherVal('Durairaj');
 
 	console.log()
+
+	double = x => 2 * x;
+	perimeter = (a, b) => 2 * (a + b);
+
+	console.log(`Twice the value of 4 is ${double(4)}`);
+	console.log(`Perimeter of rectangle whose side 12 and 3 is ${perimeter(12, 3)}`);
+
+	gamer = {
+		name: 'Mario',
+		jump(n) {
+			let x = 1;
+			setInterval(() => {
+				if(x <= n) {
+					console.log(`${this.name} jumped for the ${x} th time.`);
+					x ++;
+				}
+			}, 1000);	
+		}
+	};
+
+	setInterval(gamer.jump(12), 1000);
 }
