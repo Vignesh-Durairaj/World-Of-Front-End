@@ -38,4 +38,68 @@ window.onload = function() {
 	}
 
 	setTwo.forEach(printItem);
+
+	// Let see about some mathematical operations on SETs
+	// All were custom implementation over the Prototype SET
+	Set.prototype.union = function(anotherSet) {
+		let unionSet = new Set();
+		for (let ele of this) {
+			unionSet.add(ele);
+		}
+
+		for(let ele of anotherSet) {
+			unionSet.add(ele);
+		}
+
+		return unionSet;
+	}
+
+	Set.prototype.intersection = function(anotherSet) {
+		let intersectedSet = new Set();
+
+		for (let ele of this){
+			if(anotherSet.has(ele)) {
+				intersectedSet.add(ele);
+			}
+		}
+
+		return intersectedSet;
+	}
+
+	Set.prototype.difference = function(anotherSet) {
+		let differenceSet = new Set();
+
+		for (let ele of this) {
+			if (!anotherSet.has(ele)) {
+				differenceSet.add(ele);
+			}
+		}
+
+		return differenceSet;
+	}
+
+	Set.prototype.subSet = function(anotherSet) {
+		let isSubSet = true;
+
+		if (this.size > anotherSet.size) {
+			isSubSet = false;
+		} else {
+			for (let ele of this) {
+				if (!anotherSet.has(ele)) {
+					isSubSet = false;
+					break;
+				}
+			}
+		}
+
+		return isSubSet;
+	}
+
+	let a = new Set([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+	let b = new Set([2, 4, 6, 8, 10, 12, 14, 16, 18, 20]);
+
+	getDetails(a.union(b));
+	getDetails(a.intersection(b));
+	getDetails(a.difference(b));
+	getDetails(a.subSet(b));
 }
