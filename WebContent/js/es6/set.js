@@ -3,30 +3,39 @@ window.onload = function() {
 
 	let getDetails = function(a) {
 		console.log(a);
-		console.log(a.size);
-		console.log(a.length);
+		console.log(a.size); // This works for SET, else UNDEFINED
+		console.log(a.length); // This works for Array, else UNDEFINED
 	}
 
-	let set_one = new Set("Vignesh Durairaj");
-	console.log(set_one);
+	let setOne = new Set("Vignesh Durairaj");
+	console.log(setOne);
 
-	console.log(set_one.has(" "));
-	if (set_one.has(' ')) {
-		set_one.delete(' ');
+	console.log(setOne.has(' '));
+	if (setOne.has(' ')) {
+		setOne.delete(' ');
 	}
 
-	console.log(set_one);
-	set_one.clear();
-	console.log(set_one);
+	console.log(setOne);
+	setOne.clear();
+	console.log(setOne);
 
-	// Let add some more literals
-	set_one.add("Vignesh").add("Pranov").add("Venu").add("Durairaj").add("Pranov");
-	getDetails(set_one);
+	// Let add some more literals. 'add() function returns the same set'
+	setOne.add("Vignesh").add("Pranov").add("Venu").add("Durairaj").add("Pranov");
+	getDetails(setOne);
 
 	// A set can be created either as empty or for any iterable elements
 	// Let's filter an array with unique elements
+	let myArr = ['Vignesh', 'Durairaj', 'Pranov', 'Venu', 'Pradeep', 'Pranov', 'Teju', 'Sachin', 'Venu'];
+	getDetails(myArr);
+	getDetails([...(new Set(myArr))]);
 
-	let my_arr = ['Vignesh', 'Durairaj', 'Pranov', 'Venu', 'Pradeep', 'Pranov', 'Teju', 'Sachin', 'Venu'];
-	getDetails(my_arr);
-	getDetails([...(new Set(my_arr))]);
+	let setTwo = new Set().add({name:'Vignesh', surname:'Durairaj', age:32});
+	setTwo.add('abc').add('zzz').add(21).add(32).add(4);
+	getDetails(setTwo);
+
+	let printItem = function(key, value = 'EMPTY') {
+		console.log(`KEY : ${key}, VALUE: ${value}`);
+	}
+
+	setTwo.forEach(printItem);
 }
