@@ -17,5 +17,6 @@ window.onload = function() {
 	// Let add some more literals
 	set_one.add("Vignesh").add("Pranov").add("Venu").add("Durairaj").add("Pranov");
 	console.log(set_one);
-	console.log(set_one.size);
+	console.log(set_one.size); 
+	
 }
