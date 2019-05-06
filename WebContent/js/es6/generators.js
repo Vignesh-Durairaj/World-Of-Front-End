@@ -66,4 +66,22 @@ window.onload = function() {
 		console.log(val.value);
 		val = fruitGen.next();
 	}
+
+	// Guess what... generators can be used to assign value inside the function* too..
+
+	function* getBooks() {
+		let a = yield `Lord of the Rings`;
+		let b = yield `Harry Potter`;
+		let c = yield `The Hobbit`;
+		let d = yield `James Bond`;
+		return `The total price is ${a + b + c + d}`;
+	}
+
+	let bookGen = getBooks();
+	console.log(bookGen.next());
+	console.log(bookGen.next(12));
+	console.log(bookGen.next(5));
+	console.log(bookGen.next(3));
+	console.log(bookGen.next(10).value);
+	
 }
