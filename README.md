@@ -7,6 +7,7 @@ Let this space acts as a placeholder for my hands-on practices with the polished
 * Started out with some practices in `HTML5`
   * usage of Canvas and a brick-breaker game based on this.
   * testing out new elements in `HTML5` that are used in documents/forms like *Articles* and *Apart*.
+  * usage of collapsible components using *summary* and *details* tags
 
 * Then started practicising `JavaScript`
   * Started with basic scripting and with introduction to `ECMA6Script`
