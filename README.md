@@ -11,4 +11,8 @@ Let this space acts as a placeholder for my hands-on practices with the polished
 
 * Then started practicising `JavaScript`
   * Started with basic scripting and with introduction to `ECMA6Script`
-  * Started practising a little bit with `JQuery` API for javascripting
+  * Started practising a little bit with `JQuery` API for javascriptin
+  
+* Future `roadmap`
+  * Including an **Angular 2+** module in this project
+  
