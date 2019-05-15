@@ -14,5 +14,4 @@ Let this space acts as a placeholder for my hands-on practices with the polished
   * Started practising a little bit with `JQuery` API for javascriptin
   
 * Future `roadmap`
-  * Including an **Angular 2+** module in this project
-  
+  * Including an **Angular 2+** component in this project
